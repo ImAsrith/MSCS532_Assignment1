@@ -9,7 +9,21 @@ def insertion_sort(arr):
         arr[j + 1] = key
     return arr
 
-arr = [12, 11, 13, 5, 6]
+arr = []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    ele = int(input())
+    arr.append(ele)
 print("Original Array: ", arr)
 print("Sorted Array: ", insertion_sort(arr))
-#Expected Output: [13, 12, 11, 6, 5]
+'''
+Expected Output:
+Enter number of elements : 5
+12
+11
+13
+5
+6
+Original Array:  [12, 11, 13, 5, 6]
+Sorted Array:  [13, 12, 11, 6, 5]
+'''
